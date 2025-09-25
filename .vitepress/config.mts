@@ -4,7 +4,7 @@ export default defineConfig({
     lang: 'en-US',
     base: '/maintainers',
     title: "CosmWasm Guide",
-    description: "Guide for CosmWasm maintainers",
+    description: "Guide for CosmWasm maintainers & contributors",
     head: [['link', {rel: 'icon', href: '/maintainers/cosmwasm-small.svg'}]],
     themeConfig: {
         logo: '/cosmwasm-small.svg',
