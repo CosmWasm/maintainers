@@ -3,11 +3,11 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     lang: 'en-US',
     base: '/maintainers',
-    title: "CosmWasm",
+    title: "CosmWasm Guide",
     description: "Guide for CosmWasm maintainers",
-    head: [['link', {rel: 'icon', href: '/cosmwasm.svg'}]],
+    head: [['link', {rel: 'icon', href: '/cosmwasm-small.svg'}]],
     themeConfig: {
-        logo: '/cosmwasm.svg',
+        logo: '/cosmwasm-small.svg',
         nav: [
             {
                 text: 'Guide',
