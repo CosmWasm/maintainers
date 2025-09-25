@@ -14,8 +14,15 @@ export default defineConfig({
                 items: [
                     {text: 'Introduction', link: '/guide/introduction'},
                     {text: 'Overview', link: '/guide/overview'},
+                ],
+
+            },
+            {
+                text: 'Miscellaneous',
+                items: [
+                    {text: 'Checks in GitHub actions', link: '/guide/miscellaneous/checks-in-github-actions'},
                 ]
-            }
+            },
         ],
         sidebar: [
             {
@@ -23,8 +30,14 @@ export default defineConfig({
                 items: [
                     {text: 'Introduction', link: '/guide/introduction'},
                     {text: 'Overview', link: '/guide/overview'},
+                ],
+            },
+            {
+                text: 'Miscellaneous',
+                items: [
+                    {text: 'Checks in GitHub actions', link: '/guide/miscellaneous/checks-in-github-actions'},
                 ]
-            }
+            },
         ],
         search: {
             provider: 'local'
