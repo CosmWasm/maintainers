@@ -19,7 +19,7 @@ features:
   - title: Languages
     details: Rust, Go
   - title: CI/CD
-    details: GitHub actions
+    details: GitHub Actions
   - title: OS
     details: Linux, macOS, Windows
   - title: Tools
