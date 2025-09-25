@@ -1,4 +1,4 @@
-name: Deploy DMNTK documentation
+name: Deploy
 
 on:
   # Runs on pushes targeting the `main` branch.
