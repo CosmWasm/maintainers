@@ -5,7 +5,7 @@ export default defineConfig({
     base: '/maintainers',
     title: "CosmWasm Guide",
     description: "Guide for CosmWasm maintainers",
-    head: [['link', {rel: 'icon', href: '/cosmwasm-small.svg'}]],
+    head: [['link', {rel: 'icon', href: '/maintainers/cosmwasm-small.svg'}]],
     themeConfig: {
         logo: '/cosmwasm-small.svg',
         nav: [
