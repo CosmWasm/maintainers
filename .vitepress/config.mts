@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
     lang: 'en-US',
-    base: '/',
+    base: '/maintainers',
     title: "CosmWasm",
     description: "Guide for CosmWasm maintainers",
     head: [['link', {rel: 'icon', href: '/cosmwasm.svg'}]],
