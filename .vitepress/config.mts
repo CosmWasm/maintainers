@@ -21,6 +21,7 @@ export default defineConfig({
                 text: 'Miscellaneous',
                 items: [
                     {text: 'Checks in GitHub actions', link: '/guide/miscellaneous/checks-in-github-actions'},
+                    {text: 'Heap profiling', link: '/guide/miscellaneous/heap-profiling'},
                 ]
             },
         ],
@@ -36,6 +37,7 @@ export default defineConfig({
                 text: 'Miscellaneous',
                 items: [
                     {text: 'Checks in GitHub actions', link: '/guide/miscellaneous/checks-in-github-actions'},
+                    {text: 'Heap profiling', link: '/guide/miscellaneous/heap-profiling'},
                 ]
             },
         ],
