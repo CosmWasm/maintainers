@@ -14,6 +14,7 @@ export default defineConfig({
                 items: [
                     {text: 'Introduction', link: '/guide/introduction'},
                     {text: 'Overview', link: '/guide/overview'},
+                    {text: 'Adoption', link: '/guide/adoption'},
                     {text: 'Minimum Supported Rust Version', link: '/guide/msrv'},
                 ],
 
@@ -32,6 +33,7 @@ export default defineConfig({
                 items: [
                     {text: 'Introduction', link: '/guide/introduction'},
                     {text: 'Overview', link: '/guide/overview'},
+                    {text: 'Adoption', link: '/guide/adoption'},
                     {text: 'Minimum Supported Rust Version', link: '/guide/msrv'},
                 ],
             },
