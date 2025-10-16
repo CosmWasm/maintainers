@@ -6,7 +6,6 @@ sidebar_position: 1
 
 ![CosmWasm](/img/cosmwasm.svg)
 
-# CosmWasm Guide
+# Welcome
 
-:::tip Definitive Guide for Maintainers and Contributors
-:::
+> **Welcome to CosmWasm Guide for Maintainers and Contributors**
