@@ -8,4 +8,4 @@ sidebar_position: 1
 
 # Welcome
 
-> **Welcome to CosmWasm Guide for Maintainers and Contributors**
+Welcome to **CosmWasm Guide for Maintainers and Contributors**.
