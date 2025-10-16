@@ -1,15 +1,13 @@
-[DHAT]: https://valgrind.org/docs/manual/dh-manual.html
-[cosmwasm-vm package]: https://github.com/CosmWasm/cosmwasm/blob/d8f759e8d448cc9d86ce7e875cd44f9303a6bee5/packages/vm/Cargo.toml#L63-L65 
-[memory usage bug]: https://github.com/CosmWasm/cosmwasm/issues/1978
-[cosmwasm]: https://github.com/CosmWasm/cosmwasm
-[DHAT Viewer]: https://nnethercote.github.io/dh_view/dh_view.html
-[dhat-rs]: https://crates.io/crates/dhat
-[\#2]: https://github.com/CosmWasm/maintainers/issues/2
+---
+sidebar_position: 2
+---
 
 # Heap profiling
 
-::: danger WARNING
+:::warning
+
 This page needs review, because this procedure does not work anymore, see [\#2].
+
 :::
 
 The [DHAT] tool can be used for heap profiling to detect memory leaks or excessive memory usage.
@@ -43,3 +41,11 @@ It was used to debug this [memory usage bug] in CosmWasm 1.3 and 1.4.
 - [DHAT: a dynamic heap analysis tool][DHAT]
 - [DHAT Viewer]
 - [dhat-rs]
+
+[DHAT]: https://valgrind.org/docs/manual/dh-manual.html
+[cosmwasm-vm package]: https://github.com/CosmWasm/cosmwasm/blob/d8f759e8d448cc9d86ce7e875cd44f9303a6bee5/packages/vm/Cargo.toml#L63-L65 
+[memory usage bug]: https://github.com/CosmWasm/cosmwasm/issues/1978
+[cosmwasm]: https://github.com/CosmWasm/cosmwasm
+[DHAT Viewer]: https://nnethercote.github.io/dh_view/dh_view.html
+[dhat-rs]: https://crates.io/crates/dhat
+[\#2]: https://github.com/CosmWasm/maintainers/issues/2

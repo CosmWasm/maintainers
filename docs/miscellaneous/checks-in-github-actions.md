@@ -1,7 +1,8 @@
-[cosmwasm‑repository]: https://github.com/CosmWasm/cosmwasm
-[cosmwasm‑check]: https://crates.io/crates/cosmwasm-check
+---
+sidebar_position: 1
+---
 
-# Checks in GitHub actions
+# Checks in GitHub Actions
 
 ## [cosmwasm][cosmwasm‑repository] repository
 
@@ -21,7 +22,8 @@
 | **cosmwasm‑vm**            | 1.82.0 stable |  +  |   +    |   +   |   +   |      |           |
 | **cosmwasm‑vm‑derive**     | 1.82.0 stable |  +  |   +    |   +   |   +   |      |           |
 
-::: tip LEGEND
+:::note LEGEND
+
 - **channel** - Rust channel used to run the checks. Possible values are **stable** or **nightly**.
 - **fmt** - Checks code formatting against Rust formatting rules.
 - **linter** - Check the code correctness against Rust clippy rules.
@@ -29,6 +31,7 @@
 - **tests** - Runs all tests.
 - **wasm** - Checks building the WASM binary.
 - **wasm** - Checks building the thumbv7em binary.
+
 :::
 
 ### Workflow [contracts.yml](https://github.com/CosmWasm/cosmwasm/actions/workflows/contracts.yml)
@@ -52,7 +55,8 @@
 | **staking**          |   1.82.0 stable    |  +  |       +        |  +   |   +    |           +           |   +    |         +          |         +         |
 | **virus**            |   1.82.0 stable    |  +  |       +        |  +   |   +    |           +           |   +    |         +          |         +         |
 
-::: tip LEGEND
+:::note LEGEND
+
 - **channel** - Rust channel used to run the checks. Possible values are **stable** or **nightly**.
   Most of the contracts use **stable** channel, but in some cases **nightly** channel is required.
 - **fmt** - Checks code formatting against Rust formatting rules.
@@ -63,6 +67,7 @@
 - **schema** - Checks if there are no changes in contract interface (schema).
 - **check released** - Checks the WASM binary using recently released version of the [cosmwasm‑check] tool.  
 - **check current** - Checks the WASM binary using currently developed version of the [cosmwasm‑check] tool.
+ 
 :::
 
 ## Runner images
@@ -71,3 +76,6 @@ All checks are executed on standard [runner images](https://github.com/actions/r
 - **ubuntu-latest** (x86_64)
 - **macos-latest** (arm64)
 - **windows-latest** (x86_64)
+
+[cosmwasm‑repository]: https://github.com/CosmWasm/cosmwasm
+[cosmwasm‑check]: https://crates.io/crates/cosmwasm-check

@@ -7,24 +7,24 @@ tasks:
   clean:
     desc: Clean artifacts
     cmds:
-      - cmd: rm -rf .vitepress/cache
-      - cmd: rm -rf .vitepress/dist
+      - cmd: rm -rf .docusaurus
+      - cmd: rm -rf build
 
-  serve:
+  start:
     desc: Start server locally
     cmds:
       - task: clean
-      - cmd: npm run docs:dev
+      - cmd: npm run start
 
   build:
     desc: Build documentation
     cmds:
       - task: clean
-      - cmd: npm run docs:build
+      - cmd: npm run build
 
   preview:
     desc: Preview documentation
     cmds:
       - task: clean
-      - cmd: npm run docs:build
-      - cmd: npm run docs:preview
+      - cmd: npm run build
+      - cmd: npm run serve
