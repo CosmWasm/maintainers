@@ -1,6 +1,6 @@
 ---
 title: MSRV
-sidebar_position: 99
+sidebar_position: 80
 ---
 
 # MSRV
