@@ -8,11 +8,11 @@ sidebar_position: 25
 :::note Legend
 
 - **Released** - release date,
-- **wasmd** - version of the [wasmd] component
-- **wasmvm** - version of the [wasmvm] component
-- **std** - version of the [cosmwasm-std] component
-- **SDK** - version of the [Cosmos SDK] component
-- **IBC** - version of the [IBC] component
+- **wasmd** - version of the [wasmd] component,
+- **wasmvm** - version of the [wasmvm] component,
+- **std** - version of the [cosmwasm-std] component,
+- **SDK** - version of the [Cosmos SDK] component,
+- **IBC** - version of the [IBC] component.
 
 :::
 
