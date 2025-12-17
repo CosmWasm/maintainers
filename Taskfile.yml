@@ -10,8 +10,8 @@ tasks:
       - cmd: rm -rf .docusaurus
       - cmd: rm -rf build
 
-  start:
-    desc: Start server locally
+  serve:
+    desc: Start development server locally
     cmds:
       - task: clean
       - cmd: npm run start
