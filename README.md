@@ -1,5 +1,3 @@
-# Guide for CosmWasm Maintainers & Contributors
+# Guide for CosmWasm maintainers
 
-### https://cosmwasm.github.io/maintainers/
-
-> WORK IN PROGRESS
+> https://cosmwasm.github.io/maintainers/

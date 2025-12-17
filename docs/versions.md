@@ -34,6 +34,15 @@ sidebar_position: 25
 
 :::
 
+:::tip Rust versions
+
+|           |    min     |    max     |
+|-----------|:----------:|:----------:|
+| packages  | **1.82.0** | **1.82.0** |
+| contracts | **1.82.0** | **1.82.0** |
+
+:::
+
 ### `0.60.x` series
 
 |    Date    |  wasmd  | wasmvm |  std   |   SDK   |   IBC   | wasmer |
