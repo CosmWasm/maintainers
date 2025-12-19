@@ -77,5 +77,11 @@ All checks are executed on standard [runner images](https://github.com/actions/r
 - **macos-latest** (arm64)
 - **windows-latest** (x86_64)
 
+## Versions of GitHub actions
+
+- [actions/checkout](https://github.com/actions/checkout): `@v6`
+- [actions/upload-artifact](https://github.com/actions/upload-artifact): `@v6`
+- [actions/download-artifact](https://github.com/actions/download-artifact): `@v7`
+
 [cosmwasm‑repository]: https://github.com/CosmWasm/cosmwasm
 [cosmwasm‑check]: https://crates.io/crates/cosmwasm-check

@@ -34,6 +34,15 @@ sidebar_position: 25
 
 :::
 
+:::tip Rust versions
+
+|           |    min     |    max     |
+|-----------|:----------:|:----------:|
+| packages  | **1.82.0** |    n/a     |
+| contracts | **1.82.0** | **1.82.0** |
+
+:::
+
 ### `0.60.x` series
 
 |    Date    |  wasmd  | wasmvm |  std   |   SDK   |   IBC   | wasmer |
@@ -49,6 +58,15 @@ sidebar_position: 25
 
 :::
 
+:::tip Rust versions
+
+|           |    min     |    max     |
+|-----------|:----------:|:----------:|
+| packages  | **1.82.0** |    n/a     |
+| contracts | **1.81.0** | **1.81.0** |
+
+:::
+
 ### `0.54.x` series
 
 |    Date    |  wasmd  | wasmvm |  std   |   SDK    |  IBC   | wasmer | 
@@ -61,6 +79,15 @@ sidebar_position: 25
 - std v2.2.**x** `patches`
 - SDK v0.50.**x** `patches`
 - IBC v8.4.**x**  `patches`
+
+:::
+
+:::tip Rust versions
+
+|           |    min     |    max     |
+|-----------|:----------:|:----------:|
+| packages  | **1.82.0** |    n/a     |
+| contracts | **1.81.0** | **1.81.0** |
 
 :::
 

@@ -1,5 +1,11 @@
-# Guide for CosmWasm Maintainers & Contributors
+# Resources for CosmWasm maintainers
 
-### https://cosmwasm.github.io/maintainers/
+> [!TIP]
+> Documentation for maintainers:
+> https://cosmwasm.github.io/maintainers/
 
-> WORK IN PROGRESS
+> [!IMPORTANT]
+> **This repository serves as:**
+> - source for documentation hosted on GitHub and written in Docusaurus,
+> - a management tool for tracking important issues and pull requests that matter to maintainers
+>   but are not linked to any code changes in other repositories.
