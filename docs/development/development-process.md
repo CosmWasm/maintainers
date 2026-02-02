@@ -76,6 +76,11 @@ gitGraph TB:
 ccc
 
 ```mermaid
+---
+config:
+  gitGraph:
+    parallelCommits: true
+---
 gitGraph TB:
        commit id:"M1"
        commit id:"M2"
@@ -103,49 +108,62 @@ gitGraph TB:
        commit id:"R2" tag:"v1.0.1"
        checkout main
        commit id:"M3"
+       commit id:"M4"
+       commit id:"M5"
+       commit id:"M6"
+       commit id:"M7"
+       commit id:"M8"
 ```
 
+### Example
 
+```shell
 git checkout release/v2.2.x
-git log
-v2.2.5
-git checkout -b fix-1
-magg develop
-... do some development
-magg something
-(merge the PR)
+```
 
-git checkout -b fix-2
-... do some development
-(merge the PR)
-
-magg publish
-git tag -s v2.2.6 -m "Publish"
-
-
-
----
-
-git checkout release/v2.2.x
-git log
-v2.2.5
+```shell
 git checkout -b develop/v2.2.6
-magg develop
+```
 
+> magg develop
+
+```shell
 git checkout -b fix-1
-... do some development
-(merge the PR (fix1))
+```
+
+- Implement **fix-1**
+- Merge PR with **fix-1** to `develop/v2.2.6`
+
+```shell
+git checkout develop/v2.2.6
+```
+
+```shell
 git checkout -b fix-2
-... do some development
-(merge the PR fix2)
+```
+
+- Implement **fix-2**
+- Merge PR with **fix-2** to `develop/v2.2.6`
+
+```shell
+git checkout develop/v2.2.6
+```
+
+```shell
 git checkout -b fix-3
-... do some development
-(merge the PR fix-3)
+```
 
-git log
-develop/v2.2.6
+- Implement **fix-3**
+- Merge PR with **fix-3** to `develop/v2.2.6`
 
-magg publish
+```shell
+git checkout develop/v2.2.6
+```
 
-merge to release/v2.2.x
-git tag -s v2.2.6 -m "Publish"
+> magg publish
+
+- Merge `develop/v2.2.6` to `release/v2.2.x`
+
+```shell
+git tag -s v2.2.6 -m "Published version v2.2.6"
+```
