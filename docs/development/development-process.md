@@ -77,36 +77,28 @@ ccc
 gitGraph TB:
        commit id:"M1"
        commit id:"M2"
-       branch bugfix/v1.0.x order: 2
-       branch release/v1.0.x order: 1
-       checkout bugfix/v1.0.x
-       commit id:"D1"
-       checkout release/v1.0.x
-       merge bugfix/v1.0.x
+       branch release/v1.0.x
        commit id:"R1" tag:"v1.0.0"
-       checkout bugfix/v1.0.x
-       branch fix-1 order: 3
+       branch develop/v1.0.1
+       checkout develop/v1.0.1
+       commit id:"D1"
+       branch fix-1
        commit id:"F1"
        commit id:"F2"
-       checkout bugfix/v1.0.x
+       checkout develop/v1.0.1
        merge fix-1
        commit id:"D2"
-       checkout release/v1.0.x
-       merge bugfix/v1.0.x
-       commit id:"R2" tag:"v1.0.1"
-       checkout bugfix/v1.0.x
-       branch fix-2 order: 4
+       checkout develop/v1.0.1
+       branch fix-2
        commit id:"G1"
        commit id:"G2"
        commit id:"G3"
-       checkout bugfix/v1.0.x
+       checkout develop/v1.0.1
        merge fix-2
        commit id:"D3"
        checkout release/v1.0.x
-       merge bugfix/v1.0.x
-       commit id:"R3" tag:"v1.0.2"
-       checkout bugfix/v1.0.x
-       commit id:"D4"
+       merge develop/v1.0.1
+       commit id:"R2" tag:"v1.0.1"
        checkout main
        commit id:"M3"
 ```
