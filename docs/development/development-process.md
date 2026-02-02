@@ -6,7 +6,24 @@ sidebar_position: 1
 
 ## New features
 
-aaa
+New features are developed on `main` branch, using feature branches aligned with GitHub pull requests (PRs).
+All meaningful changes are introduced to the codebase through PRs and are always reviewed before reaching
+the `main` branch.
+
+Developers **SHOULD NOT** commit new features directly to `main` branch. Instead, each change is implemented
+in a dedicated branch created from `main`, for example: `feature-1` or `feature-2` (see the diagram below).
+All development work - such as commits **A1**, **A2** or **B1**, **B2**, **B3** - happens on these branches.
+Each feature branch is associated with a GitHub pull request targeting `main` branch. The PR is the place where code review,
+discussion, automated checks, and CI validation occur. While a PR is open, the `main` branch remains unchanged,
+ensuring it always reflects a stable, review-approved state. Only once the PR is approved and ready is the feature
+branch merged into `main` branch. After a PR is merged, additional commits may be made directly on `main`
+(**M3**, **M4**, **M5**), but only by maintainers.
+These commits typically represent post-merge activities such as small fixes after the merge, minor refactorings,
+integration adjustments or small documentation updates. Any non-trivial follow-up work should again be done
+in a new feature branch and merged via a separate PR. In practice, developers **SHOULD** treat main as a protected
+branch: it advances only through merged pull requests and intentional stabilization commits.
+All feature development, experimentation, and iteration happens on branches, with PRs acting as the gatekeeper
+that ensures quality and consistency before changes become part of `main` branch.
 
 ```mermaid
 gitGraph TB:
