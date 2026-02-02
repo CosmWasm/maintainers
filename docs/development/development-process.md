@@ -6,10 +6,10 @@ sidebar_position: 1
 
 ## New features
 
-New features are developed on `main` branch, using feature branches aligned with GitHub pull requests (PRs).
-All meaningful changes are introduced to the codebase through PRs and are always reviewed before reaching
-the `main` branch.
+**NEW FEATURES ARE DEVELOPED ON `main` BRANCH**
 
+All meaningful changes are introduced to the codebase through branches aligned with GitHub pull requests
+and are always reviewed before reaching the `main` branch.
 Developers **SHOULD NOT** commit new features directly to `main` branch. Instead, each change is implemented
 in a dedicated branch created from `main`, for example: `feature-1` or `feature-2` (see the diagram below).
 All development work - such as commits **A1**, **A2** or **B1**, **B2**, **B3** - happens on these branches.
@@ -47,7 +47,32 @@ gitGraph TB:
 
 ## Releases
 
-bbb
+**VERSIONS ARE RELEASED AND MAINTAINED BASED ON RELEASE BRANCHES**
+
+The following diagram illustrates a **release branch** based versioning strategy, where the `main` branch
+represents the ongoing development. Each released **major** or **minor** version line is maintained independently
+through dedicated release branches. The `main` branch advances through commits like **M1** and **M2**,
+which represent a normal development work that is not yet part of any released version.
+When the project is ready to ship version **1.0**, a release branch `release/v1.0.x` is created from `main` branch.
+This branch becomes the long-lived home for the **v1.0** release line. The first commit (**A1**) on this branch
+is tagged `v1.0.0`, marking the initial public release. Subsequent commits (like **A2**, **A3**), apply bug fixes only
+and are tagged as patch releases: `v1.0.1`, `v1.0.2`, and so on. **NO NEW FEATURES** are introduced on the release branch,
+its sole purpose is just to stabilize and maintain the released version. While the `v1.0.x` line is being maintained,
+development continues independently on main (**M3**). When the next minor version is ready to be published,
+a new release branch `release/v1.1.x` is created from the current state of `main` branch.
+The first commit on this branch is tagged `v1.1.0`, representing the initial **1.1** release.
+As with the previous release branch, any defects discovered after release are fixed directly on `release/v1.1.x`
+and published as patch versions `v1.1.1`. Meanwhile, the `main` branch continues to evolve (**M5**) without being
+constrained by the stabilization requirements of released versions. The same pattern is repeated for major
+version **2.0**. A new release branch `release/v2.0.x` is cut from main once the **2.0** feature set is complete.
+The initial release is tagged `v2.0.0` at commit **C1**, and multiple follow-up commits **C2**..**C4** deliver
+bug fixes as successive patch releases `v2.0.1` through `v2.0.3`. This allows the **2.0** line to remain stable
+and supported even as main moves forward with new development (**M7**, **M8**, and so on).
+
+Overall, this workflow makes versioning explicit and predictable. New features are developed only on main,
+released versions are maintained on dedicated release branches, and bug fixes are applied directly to the relevant release branch and published
+as patch releases. This approach enables parallel maintenance of multiple supported versions while keeping ongoing
+development on main enabled.
 
 ```mermaid
 ---
