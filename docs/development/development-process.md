@@ -45,6 +45,8 @@ gitGraph TB:
        branch release/v1.1.x
        commit id:"B1" tag:"v1.1.0"
        commit id:"B2" tag:"v1.1.1"
+       checkout release/v1.0.x
+       commit id:"A4" tag:"v1.0.3"
        checkout main
        commit id:"M4"
        branch release/v2.0.x
@@ -97,3 +99,48 @@ gitGraph TB:
        checkout main
        commit id:"M3"
 ```
+
+
+git checkout release/v2.2.x
+git log
+v2.2.5
+git checkout -b fix-1
+magg develop
+... do some development
+magg something
+(merge the PR)
+
+git checkout -b fix-2
+... do some development
+(merge the PR)
+
+magg publish
+git tag -s v2.2.6 -m "Publish"
+
+
+
+---
+
+git checkout release/v2.2.x
+git log
+v2.2.5
+git checkout -b develop/v2.2.6
+magg develop
+
+git checkout -b fix-1
+... do some development
+(merge the PR (fix1))
+git checkout -b fix-2
+... do some development
+(merge the PR fix2)
+git checkout -b fix-3
+... do some development
+(merge the PR fix-3)
+
+git log
+develop/v2.2.6
+
+magg publish
+
+merge to release/v2.2.x
+git tag -s v2.2.6 -m "Publish"
