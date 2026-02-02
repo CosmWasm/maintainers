@@ -55,10 +55,12 @@ gitGraph TB:
        checkout release/v1.0.x
        commit id:"A3" tag:"v1.0.2"
        commit id:"A4" tag:"v1.0.3"
-       commit id:"A5" tag:"v1.0.4"
        checkout main
        commit id:"M5"
        commit id:"M6"
+       checkout release/v1.0.x
+       commit id:"A5" tag:"v1.0.4"
+       checkout main
        branch release/v2.0.x
        commit id:"C1" tag:"v2.0.0"
        commit id:"C2" tag:"v2.0.1"
