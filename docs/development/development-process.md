@@ -9,15 +9,15 @@ sidebar_position: 1
 **NEW FEATURES ARE DEVELOPED ON `main` BRANCH**
 
 All meaningful changes are introduced to the codebase through branches aligned with GitHub pull requests
-and are always reviewed before reaching the `main` branch.
+and MUST be always reviewed before reaching the `main` branch.
 Developers **SHOULD NOT** commit new features directly to `main` branch. Instead, each change is implemented
 in a dedicated branch created from `main`, for example: `feature-1` or `feature-2` (see the diagram below).
-All development work - such as commits **A1**, **A2** or **B1**, **B2**, **B3** - happens on these branches.
-Each feature branch is associated with a GitHub pull request targeting `main` branch. The PR is the place where code review,
-discussion, automated checks, and CI validation occur. While a PR is open, the `main` branch remains unchanged,
-ensuring it always reflects a stable, review-approved state. Only once the PR is approved and ready is the feature
-branch merged into `main` branch. After a PR is merged, additional commits may be made directly on `main`
-(**M3**, **M4**, **M5**), but only by maintainers.
+All development work, such as commits **A1**, **A2** or **B1**, **B2**, **B3**, happens on these branches.
+Each feature branch is associated with a GitHub pull request targeting `main` branch. The PR is the place where
+code review, discussion, automated checks, and CI validation occur. While a PR is open, the `main` branch remains
+unchanged, ensuring it always reflects a stable, review-approved state. Only once the PR is approved and ready
+is the feature branch merged into `main` branch. After a PR is merged, additional commits may be made directly
+on `main` (**M3**, **M4**, **M5**), but only by maintainers.
 These commits typically represent post-merge activities such as small fixes after the merge, minor refactorings,
 integration adjustments or small documentation updates. Any non-trivial follow-up work should again be done
 in a new feature branch and merged via a separate PR. In practice, developers **SHOULD** treat main as a protected
@@ -47,7 +47,7 @@ gitGraph TB:
 
 ## Releases
 
-**VERSIONS ARE RELEASED AND MAINTAINED BASED ON RELEASE BRANCHES**
+**VERSIONS ARE RELEASED AND MAINTAINED BASED ON `release/**` BRANCHES**
 
 The following diagram illustrates a **release branch** based versioning strategy, where the `main` branch
 represents the ongoing development. Each released **major** or **minor** version line is maintained independently
@@ -115,7 +115,19 @@ gitGraph TB:
 
 ## Bug fixes
 
-ccc
+**BUGS ARE FIXED USING `develop/**` BRANCHES DERIVED FROM `release/**` BRANCHES**
+
+Bug fixes are implemented on branches aligned with GitHub pull requests targeting the temporary
+`develop/**` branches derived from `release/**` branches for which the fixes apply.
+The following diagram depicts a process of applying two fixes to released version `v1.0.0`.
+Version `v1.0.0` is released from branch `release/v1.0.x` and tagged as `v1.0.0`.
+From this point, the new branch `develop/v1.0.1` must be created before implementing the fixes.
+Each fix is implemented separately on dedicated branch, like `fix-1` and `fix-2`, associated
+with PRs that MUST be revied and approved. Bugs are fixed in commits **F1**, **F2** and
+**G1** though **G3**. After merging bug fixes to the common temporary branch `develop/v1.0.1`,
+this `develop/v1.0.1` branch SHOULD be reviewed again and approved in separate PR.
+Approved `develop/v1.0.1` branch MUST be merged to `release/v1.0.x` branch. After merge,
+the new version `v1.0.1` is published and tagged as `v1.0.1`.
 
 ```mermaid
 ---
@@ -157,7 +169,7 @@ gitGraph TB:
        commit id:"M8"
 ```
 
-### Example
+**Example commands**
 
 ```shell
 git checkout release/v1.0.x
