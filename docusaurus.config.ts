@@ -98,6 +98,13 @@ const config: Config = {
         },
       ],
     },
+    mermaid: {
+      options: {
+        gitGraph: {
+          parallelCommits: true,
+        },
+      },
+    },
   } satisfies Preset.ThemeConfig,
 
   markdown: {
