@@ -33,29 +33,40 @@ gitGraph TB:
 bbb
 
 ```mermaid
+---
+config:
+  gitGraph:
+    parallelCommits: true
+---
 gitGraph TB:
        commit id:"M1"
        commit id:"M2"
        branch release/v1.0.x
        commit id:"A1" tag:"v1.0.0"
        commit id:"A2" tag:"v1.0.1"
-       commit id:"A3" tag:"v1.0.2"
        checkout main
        commit id:"M3"
+       commit id:"M4"
        branch release/v1.1.x
        commit id:"B1" tag:"v1.1.0"
        commit id:"B2" tag:"v1.1.1"
+       commit id:"B3" tag:"v1.1.2"
+       commit id:"B4" tag:"v1.1.3"
        checkout release/v1.0.x
+       commit id:"A3" tag:"v1.0.2"
        commit id:"A4" tag:"v1.0.3"
+       commit id:"A5" tag:"v1.0.4"
        checkout main
-       commit id:"M4"
+       commit id:"M5"
+       commit id:"M6"
        branch release/v2.0.x
        commit id:"C1" tag:"v2.0.0"
        commit id:"C2" tag:"v2.0.1"
        commit id:"C3" tag:"v2.0.2"
        commit id:"C4" tag:"v2.0.3"
        checkout main
-       commit id:"M5"
+       commit id:"M7"
+       commit id:"M8"
 ```
 
 ## Bug fixes
