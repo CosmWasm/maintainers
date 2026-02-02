@@ -118,11 +118,11 @@ gitGraph TB:
 ### Example
 
 ```shell
-git checkout release/v2.2.x
+git checkout release/v1.0.x
 ```
 
 ```shell
-git checkout -b develop/v2.2.6
+git checkout -b develop/v1.0.1
 ```
 
 > magg develop
@@ -132,10 +132,10 @@ git checkout -b fix-1
 ```
 
 - Implement **fix-1**
-- Merge PR with **fix-1** to `develop/v2.2.6`
+- Merge PR with **fix-1** to `develop/v1.0.1`
 
 ```shell
-git checkout develop/v2.2.6
+git checkout develop/v1.0.1
 ```
 
 ```shell
@@ -143,27 +143,16 @@ git checkout -b fix-2
 ```
 
 - Implement **fix-2**
-- Merge PR with **fix-2** to `develop/v2.2.6`
+- Merge PR with **fix-2** to `develop/v1.0.1`
 
 ```shell
-git checkout develop/v2.2.6
-```
-
-```shell
-git checkout -b fix-3
-```
-
-- Implement **fix-3**
-- Merge PR with **fix-3** to `develop/v2.2.6`
-
-```shell
-git checkout develop/v2.2.6
+git checkout develop/v1.0.1
 ```
 
 > magg publish
 
-- Merge `develop/v2.2.6` to `release/v2.2.x`
+- Merge `develop/v1.0.1` to `release/v1.0.x`
 
 ```shell
-git tag -s v2.2.6 -m "Published version v2.2.6"
+git tag -s v1.0.1 -m "Published version v1.0.1"
 ```
