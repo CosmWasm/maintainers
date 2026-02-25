@@ -1,11 +1,14 @@
 # Components
 
+[cosmwasm]: https://github.com/CosmWasm/cosmwasm
+[cw-storage-plus]: https://github.com/CosmWasm/cw-storage-plus
+
 ## Dependencies
 
 ### `cosmwasm` repository
 
 The following diagram depicts the dependencies between CosmWasm components maintained
-in the [cosmwasm](https://github.com/CosmWasm/cosmwasm) repository. 
+in the [cosmwasm] repository. 
 
 ```mermaid
 ---
@@ -63,3 +66,38 @@ graph BT
     J --> G
     K --> J
 ```
+
+### `cw-storage-plus` repository
+
+The following diagram depicts the dependencies between components maintained
+in the [cw-storage-plus] repository.
+
+```mermaid
+---
+config:
+  theme: 'forest'
+---
+
+graph BT
+    A("`**cw-storage-plus**
+        3.0.1`")
+ 
+    B("`**cw-storage-macro**
+        3.0.1`")
+ 
+    C("`**cosmwasm-std**
+        3.0.1`")
+        
+    B --> A
+    C --> A
+
+    classDef cw-dependency fill:#ffe4b0,stroke:#aaa,stroke-width:1px;
+    class C cw-dependency
+```
+
+:::note
+
+The highlighted blocks depict dependencies to CosmWasm components maintained
+in [cosmwasm] repository.
+
+:::
