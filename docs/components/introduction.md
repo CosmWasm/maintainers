@@ -7,8 +7,8 @@
 
 ### `cosmwasm` repository
 
-The following diagram depicts the dependencies between CosmWasm components maintained
-in the [cosmwasm] repository. 
+The following diagram illustrates the dependencies between CosmWasm components maintained
+in the [cosmwasm] repository.
 
 ```mermaid
 ---
@@ -97,7 +97,7 @@ graph BT
 
 :::note
 
-The highlighted blocks depict dependencies to CosmWasm components maintained
+The highlighted blocks represent dependencies on CosmWasm components maintained
 in [cosmwasm] repository.
 
 :::
