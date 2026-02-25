@@ -179,13 +179,13 @@ graph BT
     B --> A
     C --> A
 
-    classDef cw-dependency fill:#ffe4b0,stroke:#aaa,stroke-width:1px;
-    class C cw-dependency
+    classDef dep-1 fill:#ffe4b0,stroke:#aaa,stroke-width:1px;
+    class C dep-1
 ```
 
 :::note
 
-The highlighted blocks represent dependencies on CosmWasm components maintained
+The highlighted (non-green) blocks represent dependencies on CosmWasm components maintained
 in [cosmwasm] repository.
 
 :::
@@ -195,5 +195,51 @@ in [cosmwasm] repository.
 ### `cw-plus` repository
 
 ### `cw-multi-test` repository
+
+The following diagram depicts the dependencies between components maintained
+in the [cw-multi-test] repository.
+
+```mermaid
+---
+config:
+  theme: 'forest'
+---
+
+graph BT
+    A("`**cw-multi-test**
+        3.0.1`")
+ 
+    B("`**cosmwasm-std**
+        3.0.1`")
+
+    C("`**cosmwasm-schema**
+        3.0.1`")
+
+    D("`**cw-storage-plus**
+        3.0.0`")
+        
+    E("`**cw-utils**
+        3.0.0`")    
+    
+    B --> A
+    C --> A
+    D --> A
+    E --> A
+
+    classDef dep-1 fill:#ffe4b0,stroke:#aaa,stroke-width:1px;
+    classDef dep-2 fill:#ffe4e0,stroke:#aaa,stroke-width:1px;
+    classDef dep-3 fill:#ffe45f,stroke:#aaa,stroke-width:1px;
+    class B dep-1
+    class C dep-1
+    class D dep-2
+    class E dep-3
+```
+
+:::note
+
+The highlighted (non-green) blocks represent dependencies on components maintained
+in other repositories.
+
+:::
 
 ### `serde-json-wasm` repository
