@@ -28,6 +28,28 @@ Below are the nightly versions listed for each stable Rust version.
 | nightly-2024-07-24 |  2024-07-23  | 1.82.0-nightly |
 | nightly-2024-07-25 |  2024-07-23  | 1.82.0-nightly |
 
+## 1.83.0
+
+## 1.84.0
+
+## 1.85.0
+
+## 1.86.0
+
+## 1.87.0
+
+## 1.88.0
+
+## 1.89.0
+
+## 1.90.0
+
+## 1.91.0
+
+## 1.92.0
+
+## 1.93.0
+
 ## 1.94.0
 
 |       1.94.0       | Release date |  Rust version  |
