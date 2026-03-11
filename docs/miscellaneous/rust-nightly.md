@@ -61,6 +61,8 @@ Below are the nightly versions listed for each stable Rust version.
 
 ## 1.87.0
 
+- [`bulk-memory` (Rust 1.87.0+, LLVM 20+)](https://doc.rust-lang.org/stable/rustc/platform-support/wasm32-unknown-unknown.html?highlight=bulk-memory#enabled-webassembly-features)
+
 |         1.87.0         |  Release date  |    Rust version    |
 |:----------------------:|:--------------:|:------------------:|
 |   nightly-2025-02-17   |   2025-02-16   |   1.87.0-nightly   |
