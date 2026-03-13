@@ -44,6 +44,8 @@ Below are the nightly versions listed for each stable Rust version.
 
 ## 1.85.0
 
+- [Edition: **2024**](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/) 
+
 |         1.85.0         |  Release date  |    Rust version    |
 |:----------------------:|:--------------:|:------------------:|
 |   nightly-2024-11-23   |   2024-11-22   |   1.85.0-nightly   |
