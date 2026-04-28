@@ -18,19 +18,19 @@ List of label names for maintenance task groups:
 | **`g:sec`** | Group: Security                          |
 
 
-Script for creating groups:
+Script for creating groups in specified repository:
 
 ```shell
 #!/usr/bin/env zsh
 
-REPO=cosmwasm
+REPO=CosmWasm/cosmwasm
 
-gh label create g:rel --color C2E0C6 --description "Group: Releases" --force --repo "CosmWasm/$REPO"                          
-gh label create g:fea --color C2E0C6 --description "Group: New features" --force --repo "CosmWasm/$REPO"                      
-gh label create g:imp --color C2E0C6 --description "Group: Improvements and refactoring" --force --repo "CosmWasm/$REPO"      
-gh label create g:fix --color C2E0C6 --description "Group: Bug fixes" --force --repo "CosmWasm/$REPO"                         
-gh label create g:dep --color C2E0C6 --description "Group: Dependency upgrades" --force --repo "CosmWasm/$REPO"               
-gh label create g:doc --color C2E0C6 --description "Group: Documentation and website updates" --force --repo "CosmWasm/$REPO" 
-gh label create g:res --color C2E0C6 --description "Group: Research" --force --repo "CosmWasm/$REPO"                          
-gh label create g:sec --color C2E0C6 --description "Group: Security" --force --repo "CosmWasm/$REPO"
+gh label create g:rel --color C2E0C6 --description "Group: Releases" --force --repo "$REPO"                          
+gh label create g:fea --color C2E0C6 --description "Group: New features" --force --repo "$REPO"                      
+gh label create g:imp --color C2E0C6 --description "Group: Improvements and refactoring" --force --repo "$REPO"      
+gh label create g:fix --color C2E0C6 --description "Group: Bug fixes" --force --repo "$REPO"                         
+gh label create g:dep --color C2E0C6 --description "Group: Dependency upgrades" --force --repo "$REPO"               
+gh label create g:doc --color C2E0C6 --description "Group: Documentation and website updates" --force --repo "$REPO" 
+gh label create g:res --color C2E0C6 --description "Group: Research" --force --repo "$REPO"                          
+gh label create g:sec --color C2E0C6 --description "Group: Security" --force --repo "$REPO"
 ```
