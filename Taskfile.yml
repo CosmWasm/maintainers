@@ -10,7 +10,7 @@ tasks:
       - cmd: rm -rf .docusaurus
       - cmd: rm -rf build
 
-  start:
+  serve:
     desc: Start development server locally
     cmds:
       - task: clean
