@@ -22,7 +22,7 @@ sidebar_position: 1
 | **cosmwasm‑vm**            | 1.82.0 stable |  +  |   +    |   +   |   +   |      |           |
 | **cosmwasm‑vm‑derive**     | 1.82.0 stable |  +  |   +    |   +   |   +   |      |           |
 
-:::note LEGEND
+:::note[LEGEND]
 
 - **channel** - Rust channel used to run the checks. Possible values are **stable** or **nightly**.
 - **fmt** - Checks code formatting against Rust formatting rules.
@@ -55,7 +55,7 @@ sidebar_position: 1
 | **staking**          |   1.82.0 stable    |  +  |       +        |  +   |   +    |           +           |   +    |         +          |         +         |
 | **virus**            |   1.82.0 stable    |  +  |       +        |  +   |   +    |           +           |   +    |         +          |         +         |
 
-:::note LEGEND
+:::note[LEGEND]
 
 - **channel** - Rust channel used to run the checks. Possible values are **stable** or **nightly**.
   Most of the contracts use **stable** channel, but in some cases **nightly** channel is required.

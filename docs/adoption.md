@@ -5,7 +5,7 @@ sidebar_position: 30
 
 # CosmWasm adoption
 
-:::note TO-DO
+:::note[TO-DO]
 
 - [ ] Verify CosmWasm versions used by chains based on **[Chain registry]**.
 - [ ] Reach-out to chain maintainers and verify their upgrade plans.

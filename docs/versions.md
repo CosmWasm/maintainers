@@ -5,7 +5,7 @@ sidebar_position: 25
 
 # Versions
 
-:::note Legend
+:::note[Legend]
 
 - **Date** - release date,
 - **wasmd** - version of the _**[wasmd]**_ component,
@@ -25,7 +25,7 @@ sidebar_position: 25
 |:----------:|:-------:|:------:|:------:|:-------:|:-------:|:------:| 
 | 2026-05-13 | v0.70.1 | v3.0.5 | v3.0.6 | v0.54.0 | v11.0.0 | =5.0.6 |
 
-:::info Accepted changes
+:::info[Accepted changes]
 
 - wasmvm v3.0.**x** `patches`
 - std v3.0.**x** `patches`
@@ -34,7 +34,7 @@ sidebar_position: 25
 
 :::
 
-:::tip Rust versions
+:::tip[Rust versions]
 
 |           |    min     |    max     |
 |-----------|:----------:|:----------:|
@@ -49,7 +49,7 @@ sidebar_position: 25
 |:----------:|:--------:|:------:|:------:|:-------:|:-------:|:------:| 
 | 2026-05-13 | v0.61.12 | v3.0.5 | v3.0.6 | v0.53.6 | v10.5.0 | =5.0.6 |
 
-:::info Accepted changes
+:::info[Accepted changes]
 
 - wasmvm v3.0.**x** `patches`
 - std v3.0.**x** `patches`
@@ -58,7 +58,7 @@ sidebar_position: 25
 
 :::
 
-:::tip Rust versions
+:::tip[Rust versions]
 
 |           |    min     |    max     |
 |-----------|:----------:|:----------:|
@@ -73,7 +73,7 @@ sidebar_position: 25
 |:----------:|:-------:|:------:|:------:|:-------:|:-------:|:------:|
 | 2026-05-13 | v0.60.7 | v2.3.3 | v2.3.3 | v0.53.5 | v10.5.0 | =4.3.7 |
 
-:::info Accepted changes
+:::info[Accepted changes]
 
 - wasmvm v2.**x**.**x** `features` `patches` 
 - std v2.**x**.**x** `features` `patches`
@@ -82,7 +82,7 @@ sidebar_position: 25
 
 :::
 
-:::tip Rust versions
+:::tip[Rust versions]
 
 |           |    min     |    max     |
 |-----------|:----------:|:----------:|
@@ -97,7 +97,7 @@ sidebar_position: 25
 |:----------:|:-------:|:------:|:------:|:--------:|:------:|:------:| 
 | 2026-05-13 | v0.54.8 | v2.2.7 | v2.2.8 | v0.50.15 | v8.8.0 | =4.3.7 |    
 
-:::info Accepted changes
+:::info[Accepted changes]
 
 - wasmvm v2.2.**x** `patches`
 - std v2.2.**x** `patches`
@@ -106,7 +106,7 @@ sidebar_position: 25
 
 :::
 
-:::tip Rust versions
+:::tip[Rust versions]
 
 |           |    min     |    max     |
 |-----------|:----------:|:----------:|
