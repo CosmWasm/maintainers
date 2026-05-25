@@ -44,7 +44,9 @@ Below are the nightly versions listed for each stable Rust version.
 
 ## 1.85.0
 
-- [Edition: **2024**](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/) 
+:::info
+- [**Edition 2024**](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/)
+:::
 
 |         1.85.0         |  Release date  |    Rust version    |
 |:----------------------:|:--------------:|:------------------:|
@@ -62,7 +64,13 @@ Below are the nightly versions listed for each stable Rust version.
 
 ## 1.87.0
 
+:::warning
 - [`bulk-memory` (Rust 1.87.0+, LLVM 20+)](https://doc.rust-lang.org/stable/rustc/platform-support/wasm32-unknown-unknown.html?highlight=bulk-memory#enabled-webassembly-features)
+:::
+
+:::danger
+Gas usage for argon2 is reduced drastically because of optimizations in this Rust version.
+:::
 
 |         1.87.0         |  Release date  |    Rust version    |
 |:----------------------:|:--------------:|:------------------:|
@@ -79,6 +87,10 @@ Below are the nightly versions listed for each stable Rust version.
 | **nightly-2025-05-09** | **2025-05-08** | **1.88.0-nightly** |
 
 ## 1.89.0
+
+:::danger
+- `__rust_probestack` is not issued any more.
+:::
 
 |         1.89.0         |  Release date  |    Rust version    |
 |:----------------------:|:--------------:|:------------------:|
