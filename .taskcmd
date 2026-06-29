@@ -1,0 +1,22 @@
+.tasks
+
+  .clean
+    .desc Clean artifacts
+    .cmd rm -rf .docusaurus
+    .cmd rm -rf build
+
+  .serve
+    .desc Start development server locally
+    .task clean
+    .cmd npm run start
+
+  .build
+    .desc Build documentation
+    .task clean
+    .cmd npm run build
+
+  .preview
+    .desc Preview documentation
+    .task clean
+    .cmd npm run build
+    .cmd npm run serve
