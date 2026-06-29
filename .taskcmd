@@ -1,3 +1,6 @@
+.note To use these task definitions, run:
+      cargo install taskcmd
+
 .tasks
 
   .clean
