@@ -152,4 +152,12 @@ Gas usage for argon2 is reduced drastically because of optimizations in this Rus
 |:----------------------:|:--------------:|:------------------:|
 |   nightly-2026-03-01   |   2026-02-28   |   1.96.0-nightly   |
 |           ⋮            |       ⋮        |         ⋮          |
-| **nightly-2026-03-11** | **2026-03-10** | **1.96.0-nightly** |
+| **nightly-2026-04-11** | **2026-04-10** | **1.96.0-nightly** |
+
+## 1.97.0
+
+|       1.97.0       | Release date |    Rust version    |
+|:------------------:|:------------:|:------------------:|
+| nightly-2026-04-12 |  2026-04-11  |   1.97.0-nightly   |
+|         ⋮          |      ⋮       |         ⋮          |
+|  **nightly-???**   |   **???**    | **1.97.0-nightly** |
